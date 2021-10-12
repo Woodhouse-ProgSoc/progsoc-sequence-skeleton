@@ -1,7 +1,7 @@
 import pygame
 
 
-def drawing_sergi(screen, x, y):
+def draw(screen, x, y):
     """
     An example drawing made by Sergi.
 

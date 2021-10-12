@@ -1,6 +1,6 @@
 import pygame
 
-from sergi import drawing_sergi
+import sergi
 
 
 SCREEN_WIDTH = 1280
@@ -17,7 +17,7 @@ def update(screen):
     # draw onto screen
     screen.fill((255, 255, 255))
 
-    drawing_sergi(screen, 100, 100)
+    sergi.draw(screen, 100, 100)
 
     pygame.display.flip()
 
