@@ -1,6 +1,7 @@
 import pygame
 
 import sergi
+import mergetest
 
 
 SCREEN_WIDTH = 1280
@@ -18,6 +19,7 @@ def update(screen):
     screen.fill((255, 255, 255))
 
     sergi.draw(screen, 100, 100)
+    mergetest.draw(screen, 300, 100)
 
     pygame.display.flip()
 
