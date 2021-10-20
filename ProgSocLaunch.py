@@ -17,6 +17,8 @@ def update(screen):
 
     # handle events
     for event in pygame.event.get():
+        sergi_interactive.handle_event(event)
+
         if event.type == pygame.QUIT:
             # quit program
             exit()

@@ -11,20 +11,26 @@ y = 600
 
 def draw(screen, delta_time):
     """
-    Draws the Woodhouse logo and makes it move away from the cursor at a constant speed
+    Draws the Woodhouse logo and makes it move away from the cursor at a constant speed.
+
+    I made this as an example that you can use for reference on the basics. You're welcome to
+    ask me how to do other things in Pygame too, or you can just Google it.
     """
 
     # in case you don't know, you can access outside variables in Python like this
     global x, y
 
-    # update coordinates
+    # update coordinates using some neat maths
     dist_x = pygame.mouse.get_pos()[0] - x
     dist_y = pygame.mouse.get_pos()[1] - y
 
     ratio = 100 / math.sqrt(dist_x**2 + dist_y**2)
 
-    x -= dist_x * ratio * delta_time
-    y -= dist_y * ratio * delta_time
+    x_speed = dist_x * ratio
+    y_speed = dist_y * ratio
+
+    x -= x_speed * delta_time  # multiply the speed by `delta_time` to get the amount it should move by in just one frame
+    y -= y_speed * delta_time
 
     # ensure it doesn't leave screen
     if x < 0:
@@ -48,3 +54,20 @@ def draw(screen, delta_time):
         (x + 70, y + 15),
         (x + 40, y + 50)
     ])
+
+
+def handle_event(event):
+    """
+    Handling events example
+    """
+
+    if event.type == pygame.KEYDOWN:  # a key was pressed down
+        if event.key == pygame.K_SPACE:  # check what key it was (type pygame.K to see a list of options)
+            print("Space was pressed!")
+
+    elif event.type == pygame.KEYUP:  # a key was released
+        if event.key == pygame.K_a:
+            print("The A key was pressed!")
+
+    elif event.type == pygame.MOUSEBUTTONDOWN:  # the user clicked the mouse
+        print(f"Click at {pygame.mouse.get_pos()}")
