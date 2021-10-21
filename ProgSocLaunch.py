@@ -40,6 +40,7 @@ def update(screen):
     sergi.draw(screen, 300, 300)
     Mario.draw(screen, 500, 200)
     Amina.draw(screen, 500, 500)
+    nick.draw(screen, 400, 400)
 
     # actually show the contents of `screen` on the monitor
     pygame.display.flip()
