@@ -9,6 +9,8 @@ import jessie
 import mergetest
 import sergi_interactive
 import eva
+import Mario
+import Amina
 
 delta_time = 0
 """
@@ -31,11 +33,11 @@ def update(screen):
 
     jessie.draw(screen, 100, 100)
     mergetest.draw(screen, 300, 100)
-    sergi_interactive.draw(screen, delta_time)
-    eva.drawing_eva(screen, 100, 100)
-    sergi.draw(screen, 100, 100)
-    Mario.draw(screen, 100, 100)
-    Amina.draw(screen, 100, 100)
+    #sergi_interactive.draw(screen, delta_time)
+    eva.drawing_eva(screen, 150, 500)
+    sergi.draw(screen, 300, 300)
+    Mario.draw(screen, 500, 200)
+    Amina.draw(screen, 500, 500)
 
     # actually show the contents of `screen` on the monitor
     pygame.display.flip()
