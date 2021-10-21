@@ -6,6 +6,7 @@ from constants import *
 import sergi
 import mergetest
 import sergi_interactive
+import eva
 
 delta_time = 0
 """
@@ -29,6 +30,7 @@ def update(screen):
     sergi.draw(screen, 100, 100)
     mergetest.draw(screen, 300, 100)
     sergi_interactive.draw(screen, delta_time)
+    drawing_eva(screen, 100, 100)
 
     # actually show the contents of `screen` on the monitor
     pygame.display.flip()
