@@ -3,7 +3,7 @@ import time
 
 from constants import *
 
-import sergi
+import jessie
 import mergetest
 import sergi_interactive
 import eva
@@ -27,7 +27,7 @@ def update(screen):
     # clear previous frame from screen
     screen.fill((255, 255, 255))
 
-    sergi.draw(screen, 100, 100)
+    jessie.draw(screen, 100, 100)
     mergetest.draw(screen, 300, 100)
     sergi_interactive.draw(screen, delta_time)
     eva.drawing_eva(screen, 100, 100)
