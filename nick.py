@@ -10,7 +10,7 @@ def draw(screen, x, y):
     Try to keep the whole drawing roughly 100 by 100 pixels
     """
 
-    pygame.draw.rect(screen, (255, 0, 0), (x+20, y + 30, 120, 10))
+    pygame.draw.rect(screen, (255, 0, 0), (x + 50, y + 30, 90, 10))
     # this function draws a rectangle
     # (0, 0, 200) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # (0, 50, 100, 50) are the dimensions of the rectangle in the form (top-left x coordinate, top-left y coordinate, width, height)
@@ -34,6 +34,10 @@ def draw(screen, x, y):
     # 10 is the radius
 
     pygame.draw.ellipse(screen, (255, 0, 0), (x + 100, y + 50, 100, 40))
+    pygame.draw.ellipse(screen, 0, (x + 65, y -30, 30, 10))
+    pygame.draw.ellipse(screen, 0, (x + 185, y -30, 30, 10))
+
+
     # this function draws an ellipse
     # (200, 200, 0) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # imagine the smallest rectangle that would touch all the sides of the ellipse, then:
