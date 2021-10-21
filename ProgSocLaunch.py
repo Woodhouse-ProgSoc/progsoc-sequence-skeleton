@@ -1,6 +1,6 @@
 import pygame
 
-import sergi
+import jessie
 
 
 SCREEN_WIDTH = 1280
@@ -17,7 +17,7 @@ def update(screen):
     # draw onto screen
     screen.fill((255, 255, 255))
 
-    sergi.draw(screen, 100, 100)
+    jessie.draw(screen, 100, 100)
 
     pygame.display.flip()
 
