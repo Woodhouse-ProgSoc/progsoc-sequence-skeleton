@@ -31,6 +31,8 @@ def update(screen):
     mergetest.draw(screen, 300, 100)
     sergi_interactive.draw(screen, delta_time)
     eva.drawing_eva(screen, 100, 100)
+    sergi.draw(screen, 100, 100)
+    Mario.draw(screen, 100, 100)
 
     # actually show the contents of `screen` on the monitor
     pygame.display.flip()
