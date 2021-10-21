@@ -1,6 +1,5 @@
 import pygame
 
-
 def draw(screen, x, y):
     """
     An example drawing made by Sergi.
@@ -10,27 +9,25 @@ def draw(screen, x, y):
     Try to keep the whole drawing roughly 100 by 100 pixels
     """
 
-
-
-    pygame.draw.rect(screen, (0, 0, 200), (x, y + 50, 100, 50))
+    pygame.draw.rect(screen, (0, 50, 200), (x, y + 50, 100, 100))
     # this function draws a rectangle
     # (0, 0, 200) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # (0, 50, 100, 50) are the dimensions of the rectangle in the form (top-left x coordinate, top-left y coordinate, width, height)
     # Remember that y increases as you go down the screen
 
-    pygame.draw.polygon(screen, (200, 0, 0), [(x + 0, y + 50), (x + 50, y + 0), (x + 100, y + 50)])
+    pygame.draw.polygon(screen, (200, 0, 0), [(x + 0, y + 100), (x + 100, y + 0), (x + 100, y + 50)])
     # this function draws any polygon (in this case, a triangle)
     # (200, 0, 0) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # [(x + 0, y + 50), (x + 50, y + 0), (x + 100, y + 50)] is a list of all the vertices of the polygon, i.e.:
     # [(x coord, y coord), (x coord, y coord), (x coord, y coord)]
 
-    pygame.draw.circle(screen, (0, 200, 200), (x + 25, y + 25), 20)
+    pygame.draw.circle(screen, (0, 200, 200), (x + 50, y + 50), 20)
     # this function draws a circle
     # (0, 100, 100) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # (x + 25, x + 25) are the x and y coordinates of its center
     # 10 is the radius
 
-    pygame.draw.ellipse(screen, (200, 200, 0), (x + 25, y + 25, 30, 70))
+    pygame.draw.ellipse(screen, (100, 100, 0), (x + 25, y + 25, 30, 70))
     # this function draws an ellipse
     # (200, 200, 0) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # imagine the smallest rectangle that would touch all the sides of the ellipse, then:
