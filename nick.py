@@ -10,13 +10,13 @@ def draw(screen, x, y):
     Try to keep the whole drawing roughly 100 by 100 pixels
     """
 
-    pygame.draw.rect(screen, (255, 0, 0), (x + 50, y + 30, 90, 10))
+    #pygame.draw.rect(screen, (255, 0, 0), (x + 50, y + 30, 90, 10))
     # this function draws a rectangle
     # (0, 0, 200) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # (0, 50, 100, 50) are the dimensions of the rectangle in the form (top-left x coordinate, top-left y coordinate, width, height)
     # Remember that y increases as you go down the screen
 
-    #pygame.draw.polygon(screen, (200, 0, 0), [(x + 0, y + 50), (x + 50, y + 0), (x + 100, y + 50)])
+    pygame.draw.polygon(screen, (255, 0, 0), [(x + 40, y + 35), (x + 150, y + 40), (x + 150, y + 30)])
     # this function draws any polygon (in this case, a triangle)
     # (200, 0, 0) is the colour in RGB form. Google "colour picker", choose a colour and copy the RGB value
     # [(x + 0, y + 50), (x + 50, y + 0), (x + 100, y + 50)] is a list of all the vertices of the polygon, i.e.:
