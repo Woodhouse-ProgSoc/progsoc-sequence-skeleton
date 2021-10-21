@@ -3,6 +3,7 @@ import time
 
 from constants import *
 
+import rowena
 import sergi
 import nick
 import jessie
@@ -31,9 +32,10 @@ def update(screen):
     # clear previous frame from screen
     screen.fill((255, 255, 255))
 
+    rowena.draw(screen, 700, 300)
     jessie.draw(screen, 100, 100)
     mergetest.draw(screen, 300, 100)
-    #sergi_interactive.draw(screen, delta_time)
+    sergi_interactive.draw(screen, delta_time)
     eva.drawing_eva(screen, 150, 500)
     sergi.draw(screen, 300, 300)
     Mario.draw(screen, 500, 200)
