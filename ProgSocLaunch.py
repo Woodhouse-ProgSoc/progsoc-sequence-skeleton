@@ -33,6 +33,7 @@ def update(screen):
     eva.drawing_eva(screen, 100, 100)
     sergi.draw(screen, 100, 100)
     Mario.draw(screen, 100, 100)
+    Amina.draw(screen, 100, 100)
 
     # actually show the contents of `screen` on the monitor
     pygame.display.flip()
