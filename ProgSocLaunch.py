@@ -3,6 +3,8 @@ import time
 
 from constants import *
 
+import sergi
+import nick
 import jessie
 import mergetest
 import sergi_interactive
@@ -37,6 +39,7 @@ def update(screen):
 
     # actually show the contents of `screen` on the monitor
     pygame.display.flip()
+
 
 
 def main():
